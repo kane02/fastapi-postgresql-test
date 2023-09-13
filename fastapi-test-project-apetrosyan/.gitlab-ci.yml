@@ -41,14 +41,14 @@ deploy-stag:
   stage: deploy
   script: 
     - >
-      DOMAIN={{cookiecutter.domain_staging}}
-      TRAEFIK_TAG={{cookiecutter.traefik_constraint_tag_staging}}
-      STACK_NAME={{cookiecutter.docker_swarm_stack_name_staging}}
+      DOMAIN=stg.apetrosyan.testfastapiproject
+      TRAEFIK_TAG=stg.apetrosyan.testfastapiproject
+      STACK_NAME=stg-apetrosyan-testfastapiproject
       TAG=stag
       sh ./scripts/deploy.sh
   environment:
     name: staging
-    url: https://{{cookiecutter.domain_staging}}
+    url: https://stg.apetrosyan.testfastapiproject
   only:
     - master
   tags:
@@ -59,14 +59,14 @@ deploy-prod:
   stage: deploy
   script:
     - >
-      DOMAIN={{cookiecutter.domain_main}}
-      TRAEFIK_TAG={{cookiecutter.traefik_constraint_tag}}
-      STACK_NAME={{cookiecutter.docker_swarm_stack_name_main}}
+      DOMAIN=apetrosyan.testfastapiproject
+      TRAEFIK_TAG=apetrosyan.testfastapiproject
+      STACK_NAME=apetrosyan-testfastapiproject
       TAG=prod
       sh ./scripts/deploy.sh
   environment:
     name: production
-    url: https://{{cookiecutter.domain_main}}
+    url: https://apetrosyan.testfastapiproject
   only:
     - production
   tags:
