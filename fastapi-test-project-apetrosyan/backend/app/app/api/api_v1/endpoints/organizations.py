@@ -16,7 +16,7 @@ def read_organizations(
     limit: int = 100,
 ) -> Any:
     """
-    Retrieve items.
+    Retrieve Organizations.
     """
     items = crud.organization.get_multi(db, skip=skip, limit=limit)
     return items
@@ -26,7 +26,7 @@ def read_organizations(
 def create_organization(
     *,
     db: Session = Depends(deps.get_db),
-    item_in: schemas.OrganizationCreate,
+    item_in: schemas.OrganizationCreate
 ) -> Any:
     """
     Create new organization.
@@ -35,7 +35,7 @@ def create_organization(
     return item
 
 
-@router.put("/{id}", response_model=schemas.Organization)
+@router.patch("/{id}", response_model=schemas.Organization)
 def update_organization(
     *,
     db: Session = Depends(deps.get_db),
@@ -63,7 +63,7 @@ def read_organization(
     """
     organization = crud.organization.get(db=db, id=id)
     if not organization:
-        raise HTTPException(status_code=404, detail="Item not found")
+        raise HTTPException(status_code=404, detail="Organization not found")
     return organization
 
 
@@ -71,13 +71,13 @@ def read_organization(
 def delete_organization(
     *,
     db: Session = Depends(deps.get_db),
-    id: int,
+    id: int
 ) -> Any:
     """
-    Delete an organization.
+    Delete an organization by id.
     """
-    organization = crud.item.get(db=db, id=id)
+    organization = crud.organization.get(db=db, id=id)
     if not organization:
-        raise HTTPException(status_code=404, detail="Item not found")
+        raise HTTPException(status_code=404, detail="Organization not found")
     organization_db = crud.organization.remove(db=db, id=id)
     return organization_db
