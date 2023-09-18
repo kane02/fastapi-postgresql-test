@@ -56,12 +56,12 @@ def update_organization(
 def read_organization(
     *,
     db: Session = Depends(deps.get_db),
-    id: int,
+    id: int
 ) -> Any:
     """
     Get Organization by ID.
     """
-    organization = crud.item.get(db=db, id=id)
+    organization = crud.organization.get(db=db, id=id)
     if not organization:
         raise HTTPException(status_code=404, detail="Item not found")
     return organization
