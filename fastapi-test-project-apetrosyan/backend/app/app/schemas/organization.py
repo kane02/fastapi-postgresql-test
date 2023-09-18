@@ -23,7 +23,7 @@ class OrganizationUpdate(OrganizationBase):
 # Properties shared by models stored in DB
 class OrganizationInDBBase(OrganizationBase):
     id: int
-    title: str
+    name: str
     description: str
 
     class Config:
