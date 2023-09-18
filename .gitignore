@@ -3,3 +3,7 @@ testing-project
 .mypy_cache
 poetry.lock
 dev-link/
+/frontend/
+/node_modules/
+/fastapi-test-project-apetrosyan/node_modules/
+/fastapi-test-project-apetrosyan/.env
