@@ -7,3 +7,4 @@ dev-link/
 /node_modules/
 /fastapi-test-project-apetrosyan/node_modules/
 /fastapi-test-project-apetrosyan/.env
+/.idea/
