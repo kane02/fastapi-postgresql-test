@@ -6,6 +6,7 @@ from app.core.security import get_password_hash, verify_password
 from app.crud.base import CRUDBase
 from app.models.user import User
 from app.schemas.user import UserCreate, UserUpdate
+from datetime import datetime, timezone
 
 
 class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
@@ -16,8 +17,13 @@ class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
         db_obj = User(
             email=obj_in.email,
             hashed_password=get_password_hash(obj_in.password),
-            full_name=obj_in.full_name,
+            first_name = obj_in.first_name,
+            middle_name = obj_in.middle_name,
+            last_name = obj_in.last_name,
             is_superuser=obj_in.is_superuser,
+            role=obj_in.role,
+            is_active=obj_in.is_active,
+            created_at=datetime.now(timezone.utc)
         )
         db.add(db_obj)
         db.commit()
