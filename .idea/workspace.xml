@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a008dfef-2f48-4850-85b9-6b30a072cf64" name="Changes" comment="organizations-endpoints: fix organization controller docs, remove operation, update operation HTTP method" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2VISTdQqEqts0HV9BIGXn8cATPb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Repos/fastapi-postgresql-test/{{cookiecutter.project_slug}}/backend/app&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Repos\fastapi-postgresql-test\{{cookiecutter.project_slug}}\backend\app" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a008dfef-2f48-4850-85b9-6b30a072cf64" name="Changes" comment="" />
+      <created>1694522109720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694522109720</updated>
+    </task>
+    <task id="LOCAL-00001" summary="project-preparation: comment frontend image work parts from docker compose files">
+      <created>1694523880819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694523880819</updated>
+    </task>
+    <task id="LOCAL-00002" summary="project-preparation: update backend dockerfile dependencies loading part to load using pip instead poetry">
+      <created>1694535759938</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694535759938</updated>
+    </task>
+    <task id="LOCAL-00003" summary="project-preparation: update celery worker dockerfile dependencies loading part to load using pip instead poetry">
+      <created>1694535823092</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694535823092</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project-preparation: comment frontend image work parts from docker compose files" />
+    <MESSAGE value="project-preparation: update backend dockerfile dependencies loading part to load using pip instead poetry" />
+    <MESSAGE value="project-preparation: update celery worker dockerfile dependencies loading part to load using pip instead poetry" />
+    <option name="LAST_COMMIT_MESSAGE" value="project-preparation: update celery worker dockerfile dependencies loading part to load using pip instead poetry" />
+  </component>
+</project>

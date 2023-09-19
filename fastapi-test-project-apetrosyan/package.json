@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "vue": "^3.3.4"
+  }
+}
